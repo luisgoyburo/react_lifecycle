@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-
+// import Clock from "./componentDidMount";
+import ClockDidUpadate from "./componentDidUpdate";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,11 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* <Clock /> */}
+      <ClockDidUpadate isPrecise="true" />{" "}
+      {/* aun asi se ponga false, al tener isPrecise un valor, 
+      el return de ClockDidUpdate lo va a tomar como verdadero, ya que existe. si borramos
+      esta propiedad, lo tamará como false. */}
     </div>
   );
 }
